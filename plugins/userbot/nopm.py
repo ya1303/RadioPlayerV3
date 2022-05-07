@@ -1,6 +1,6 @@
 """
 RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+Copyright (c) 2021  Asm Safone <https://github.com/WinterSoldierX25>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -28,7 +28,7 @@ REPLY_MESSAGE=Config.REPLY_MESSAGE
 @Client.on_message(filters.private & filters.incoming & ~filters.bot & ~filters.service & ~filters.me & ~filters.edited & ~filters.chat([777000, 454000]))
 async def nopm(client, message): 
     try:
-        inline = await client.get_inline_bot_results(USERNAME, "SAF_ONE")
+        inline = await client.get_inline_bot_results(USERNAME, "WinterSoldierX25")
         m=await client.send_inline_bot_result(
             message.chat.id,
             query_id=inline.query_id,
